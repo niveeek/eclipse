@@ -25,6 +25,7 @@ public class AlumnosController {
 	//ANOTACIONES
 	@Autowired
 	private IService<AlumnoListDTO, AlumnoCreateDTO> alumnosService;
+	//REQUEST TIPO GET
 	@GetMapping
 	public List<AlumnoListDTO> getListaAlumnos(){
 		return alumnosService.getAll();
